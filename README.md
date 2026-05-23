@@ -2,6 +2,14 @@
 
 A Python-based application designed to help manage and track shopping carts with advanced features for itemization, calculation, and reporting.
 
+<div align="center">
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Python 3.8+](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://www.python.org/downloads/)
+[![GitHub](https://img.shields.io/badge/GitHub-lordilyngimena-black?logo=github)](https://github.com/lordilyngimena)
+
+</div>
+
 ---
 
 ## 📋 Table of Contents
@@ -170,17 +178,11 @@ TallyCart/
 ├── requirements.txt
 ├── .env.example
 ├── main.py
-├── tallycart/
-│   ├── __init__.py
-│   ├── cart.py
-│   ├── item.py
-│   ├── discount.py
-│   └── utils.py
-├── tests/
-│   ├── __init__.py
-│   ├── test_cart.py
-│   ├── test_item.py
-│   └── test_discount.py
+├── cart_logic.py
+├── interfaces.py
+├── models.py
+├── strategies.py
+├── test_app.py
 └── docs/
     ├── CONTRIBUTING.md
     ├── API.md
@@ -246,6 +248,16 @@ git push origin feature/your-feature-name
 ## 📜 License
 
 This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
+
+<div align="center">
+
+### ⚖️ MIT License Badge
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+**A permissive open-source license**
+
+</div>
 
 ### ⚖️ MIT License - Complete Overview
 
@@ -394,9 +406,9 @@ Thanks to all contributors and the open-source community for their support and i
 
 **MIT Licensed | 100% Open Source**
 
-[![GitHub](https://img.shields.io/badge/GitHub-lordilyngimena-blue?logo=github)](https://github.com/lordilyngimena)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.8+](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://www.python.org/downloads/)
+[![GitHub](https://img.shields.io/badge/GitHub-lordilyngimena-black?logo=github)](https://github.com/lordilyngimena)
 
 [⬆ Back to Top](#tallycart)
 

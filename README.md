@@ -8,6 +8,7 @@ A Python-based application designed to help manage and track shopping carts with
 
 - [Overview](#overview)
 - [Features](#features)
+- [Tech Stack](#tech-stack)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Project Structure](#project-structure)
@@ -37,12 +38,66 @@ A Python-based application designed to help manage and track shopping carts with
 
 ---
 
+## 🛠️ Tech Stack
+
+### Core Technologies
+
+| Category | Technology | Version | Purpose |
+|----------|-----------|---------|---------|
+| **Language** | Python | 3.8+ | Core programming language |
+| **Runtime** | CPython | 3.8+ | Python runtime environment |
+| **Package Manager** | pip | Latest | Dependency management |
+
+### Backend & Libraries
+
+| Library | Version | Use Case |
+|---------|---------|----------|
+| **requests** | >=2.28.0 | HTTP client library for API calls |
+| **python-dotenv** | >=0.20.0 | Environment variable management |
+| **pandas** | Latest | Data manipulation and analysis (optional) |
+| **SQLAlchemy** | Latest | ORM for database operations (optional) |
+
+### Development Tools
+
+| Tool | Purpose |
+|------|---------|
+| **pytest** | Unit testing framework |
+| **black** | Code formatter |
+| **flake8** | Code linter |
+| **mypy** | Static type checker |
+| **git** | Version control |
+
+### Architecture & Patterns
+
+- **Object-Oriented Programming (OOP)**: Classes and inheritance
+- **Design Patterns**: Singleton, Factory, Observer patterns
+- **MVC Architecture**: Model-View-Controller separation
+- **RESTful Principles**: API design standards
+
+### Supported Platforms
+
+- ✅ **Windows** (10, 11+)
+- ✅ **macOS** (10.14+)
+- ✅ **Linux** (Ubuntu 18.04+, Debian, CentOS)
+
+### Environment
+
+```
+Python 3.8, 3.9, 3.10, 3.11, 3.12
+OS: Cross-platform (Windows, macOS, Linux)
+Memory: Minimum 512MB RAM
+Disk Space: 100MB for installation
+```
+
+---
+
 ## 🚀 Installation
 
 ### Prerequisites
 
 - Python 3.8 or higher
 - pip (Python package installer)
+- Virtual environment (recommended)
 
 ### Setup
 
@@ -61,6 +116,12 @@ source venv/bin/activate  # On Windows: venv\Scripts\activate
 3. **Install dependencies**:
 ```bash
 pip install -r requirements.txt
+```
+
+4. **Configure environment variables**:
+```bash
+cp .env.example .env
+# Edit .env with your configuration
 ```
 
 ---
@@ -107,6 +168,7 @@ TallyCart/
 ├── README.md
 ├── LICENSE
 ├── requirements.txt
+├── .env.example
 ├── main.py
 ├── tallycart/
 │   ├── __init__.py
@@ -115,12 +177,14 @@ TallyCart/
 │   ├── discount.py
 │   └── utils.py
 ├── tests/
+│   ├── __init__.py
 │   ├── test_cart.py
 │   ├── test_item.py
 │   └── test_discount.py
 └── docs/
     ├── CONTRIBUTING.md
-    └── API.md
+    ├── API.md
+    └── ARCHITECTURE.md
 ```
 
 ---
@@ -134,9 +198,19 @@ requests>=2.28.0
 python-dotenv>=0.20.0
 ```
 
-To install:
+### Development Dependencies
+
+```
+pytest>=7.0.0
+black>=22.0.0
+flake8>=4.0.0
+mypy>=0.950
+```
+
+To install all dependencies:
 ```bash
 pip install -r requirements.txt
+pip install -r requirements-dev.txt
 ```
 
 ---
@@ -173,34 +247,89 @@ git push origin feature/your-feature-name
 
 This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
 
-### MIT License Summary
+### ⚖️ MIT License - Complete Overview
 
-The MIT License is a permissive open-source license that allows:
+The **MIT License** is one of the most permissive open-source licenses available, making it an excellent choice for developers who want to share code with minimal restrictions.
 
-- ✅ **Commercial Use**: You can use this software for commercial purposes
-- ✅ **Modification**: You can modify the source code
-- ✅ **Distribution**: You can distribute copies of the software
-- ✅ **Private Use**: You can use this for private purposes
+#### ✅ What You CAN Do
 
-**With the conditions**:
-- ⚠️ **License and Copyright Notice**: You must include the original license and copyright notice in any copies or significant portions of the software
+| Permission | Details |
+|-----------|---------|
+| **Commercial Use** | Use the software for commercial purposes and products |
+| **Modification** | Modify the source code and create derivative works |
+| **Distribution** | Distribute copies or modified versions of the software |
+| **Private Use** | Use the software privately without any restrictions |
+| **Sublicense** | Integrate the code into other projects or licenses |
 
-**Without liability**:
-- ⚠️ **No Warranty**: The software is provided "as is" without warranty of any kind
-- ⚠️ **No Liability**: The authors are not liable for any claims, damages, or other liability
+#### ⚠️ What You MUST Do
 
-**Full License Text**: [MIT License Official](https://opensource.org/licenses/MIT)
+| Requirement | Details |
+|------------|---------|
+| **License Notice** | Include the original license and copyright notice in your distribution |
+| **Copyright Attribution** | Credit the original author(s) in documentation or comments |
 
-### Quick License Info
+#### ❌ What You CANNOT Rely On
 
-| Aspect | Permission |
+| Limitation | Details |
+|-----------|---------|
+| **Warranty** | The software is provided "as-is" with NO WARRANTY of any kind |
+| **Liability** | Authors are NOT liable for any damages or issues caused by the software |
+| **Support** | No guaranteed support or maintenance is promised |
+
+### MIT License Summary Table
+
+| Aspect | Permitted |
 |--------|-----------|
 | Commercial Use | ✅ Yes |
 | Modification | ✅ Yes |
 | Distribution | ✅ Yes |
 | Private Use | ✅ Yes |
+| Sublicensing | ✅ Yes |
 | Warranty | ❌ No |
 | Liability | ❌ No |
+| Trademark Use | ❌ No |
+
+### License Text
+
+```
+MIT License
+
+Copyright (c) 2026 lordilyngimena
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+```
+
+### License Resources
+
+**Official Documentation:**
+- [MIT License - opensource.org](https://opensource.org/licenses/MIT)
+- [Choose a License - MIT Guide](https://choosealicense.com/licenses/mit/)
+
+**Understanding the License:**
+- [TLDR Legal - MIT License](https://tldrlegal.com/license/mit-license)
+- [MIT License Explained - YouTube](https://www.youtube.com/results?search_query=MIT+License+explained)
+- [GitHub License Documentation](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository)
+
+**Compare with Other Licenses:**
+- [Creative Commons Licenses](https://creativecommons.org/licenses/)
+- [GNU GPL License](https://www.gnu.org/licenses/gpl-3.0.html)
+- [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0)
 
 ---
 
@@ -215,26 +344,33 @@ The MIT License is a permissive open-source license that allows:
 ### Contact
 
 - **Author**: lordilyngimena
-- **Email**: [Your email here]
+- **Email**: gimenalordilyn06@gmail.com
 - **GitHub**: [@lordilyngimena](https://github.com/lordilyngimena)
+- **Repository**: [lordilyngimena/TallyCart](https://github.com/lordilyngimena/TallyCart)
 
 ---
 
 ## 📚 Additional Resources
 
-### Open Source Licenses
-
-- [MIT License Official Documentation](https://opensource.org/licenses/MIT)
-- [Creative Commons - How to License your Code](https://creativecommons.org/licenses/)
-- [TLDR Legal - MIT License](https://tldrlegal.com/license/mit-license)
-- [GitHub - Choosing a License](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository)
-
-### Related Tools & References
+### Tech Stack References
 
 - [Python Official Documentation](https://docs.python.org/3/)
+- [pip Documentation](https://pip.pypa.io/)
 - [PEP 8 Style Guide](https://pep8.org/)
+- [Real Python Tutorials](https://realpython.com/)
+
+### Development Tools
+
 - [Git Documentation](https://git-scm.com/doc)
 - [GitHub Help Documentation](https://docs.github.com/)
+- [Pytest Documentation](https://docs.pytest.org/)
+- [Virtual Environments Guide](https://docs.python.org/3/tutorial/venv.html)
+
+### Open Source Best Practices
+
+- [Open Source Initiative](https://opensource.org/)
+- [How to Contribute to Open Source](https://opensource.guide/)
+- [First Contributions Guide](https://github.com/firstcontributions/first-contributions)
 
 ---
 
@@ -245,14 +381,22 @@ Thanks to all contributors and the open-source community for their support and i
 ---
 
 **Last Updated**: May 23, 2026  
+**License**: MIT  
 **Repository**: [lordilyngimena/TallyCart](https://github.com/lordilyngimena/TallyCart)  
-**Status**: Active Development
+**Status**: Active Development  
+**Python Support**: 3.8+
 
 ---
 
 <div align="center">
 
-Made with ❤️ by [lordilyngimena](https://github.com/lordilyngimena)
+### Made with ❤️ by [lordilyngimena](https://github.com/lordilyngimena)
+
+**MIT Licensed | 100% Open Source**
+
+[![GitHub](https://img.shields.io/badge/GitHub-lordilyngimena-blue?logo=github)](https://github.com/lordilyngimena)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Python 3.8+](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://www.python.org/downloads/)
 
 [⬆ Back to Top](#tallycart)
 

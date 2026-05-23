@@ -2,8 +2,6 @@
 
 A Python-based application designed to help manage and track shopping carts with advanced features for itemization, calculation, and reporting.
 
-<div align="center">
-
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.8+](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![GitHub](https://img.shields.io/badge/GitHub-lordilyngimena-black?logo=github)](https://github.com/lordilyngimena)
